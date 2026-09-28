@@ -1,1 +1,1533 @@
-https://drive.google.com/file/d/1B0D0WUvjtTc7c7BWP8LLbwbj4YiLShUZ/view?usp=drivesdk
+<!DOCTYPE html>
+<html lang="it" class="scroll-smooth">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Sinfonia Empedocle | Lista Elettorale Rappresentanza d'Istituto</title>
+  <meta name="description" content="Sito ufficiale della lista 'Sinfonia Empedocle' per la Rappresentanza d'Istituto del Liceo Classico e Musicale 'Empedocle' di Agrigento. Hub appunti, bacheca segnalazioni, programma e partnership ScuolaZoo.">
+  
+  <!-- Favicon iconico -->
+  <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>🏛️</text></svg>">
+
+  <!-- Google Fonts: Playfair Display (Classico/Serif) & Plus Jakarta Sans (Moderno/Leggibile) -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,600;0,700;0,800;1,400;1,600&family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+
+  <!-- Tailwind CSS CDN -->
+  <script src="https://cdn.tailwindcss.com"></script>
+
+  <!-- Lucide Icons -->
+  <script src="https://unpkg.com/lucide@latest"></script>
+
+  <script>
+    tailwind.config = {
+      darkMode: 'class',
+      theme: {
+        extend: {
+          colors: {
+            classic: {
+              50: '#f8fafc',
+              100: '#f1f5f9',
+              200: '#e2e8f0',
+              700: '#1e3a5f',
+              800: '#0f233a',
+              900: '#091524',
+              950: '#040910',
+            },
+            gold: {
+              50: '#fffbeb',
+              100: '#fef3c7',
+              200: '#fde68a',
+              300: '#fcd34d',
+              400: '#fbbf24',
+              500: '#f59e0b',
+              600: '#d97706',
+              700: '#b45309',
+              800: '#92400e',
+            },
+            scuolazoo: {
+              red: '#ff2d55',
+              darkred: '#d91b40',
+              yellow: '#ffe600',
+              black: '#111827',
+              gray: '#1f2937'
+            }
+          },
+          fontFamily: {
+            serif: ['"Playfair Display"', 'Georgia', 'serif'],
+            sans: ['"Plus Jakarta Sans"', 'Inter', 'sans-serif'],
+          },
+          boxShadow: {
+            'gold-glow': '0 0 25px -5px rgba(217, 119, 6, 0.25)',
+            'card-hover': '0 20px 35px -10px rgba(9, 21, 36, 0.12), 0 8px 16px -6px rgba(9, 21, 36, 0.08)',
+          }
+        }
+      }
+    }
+  </script>
+
+  <style>
+    /* Texture ellenica e classica di sottofondo */
+    .greek-pattern {
+      background-image: radial-gradient(rgba(217, 119, 6, 0.08) 1px, transparent 0);
+      background-size: 24px 24px;
+    }
+    
+    .classical-gradient {
+      background: linear-gradient(135deg, #091524 0%, #0f233a 60%, #173352 100%);
+    }
+
+    .gold-gradient-text {
+      background: linear-gradient(135deg, #fef3c7 0%, #fbbf24 50%, #d97706 100%);
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+    }
+
+    .hero-glow {
+      position: absolute;
+      width: 600px;
+      height: 600px;
+      background: radial-gradient(circle, rgba(217, 119, 6, 0.18) 0%, rgba(15, 35, 58, 0) 70%);
+      pointer-events: none;
+      filter: blur(40px);
+    }
+    
+    /* Animazioni fluide */
+    .transition-custom {
+      transition: all 0.35s cubic-bezier(0.4, 0, 0.2, 1);
+    }
+  </style>
+</head>
+<body class="bg-slate-50 text-slate-800 font-sans antialiased selection:bg-gold-500 selection:text-white">
+
+  <!-- ========================================================= -->
+  <!-- NAVBAR ISTITUZIONALE                                       -->
+  <!-- ========================================================= -->
+  <header class="sticky top-0 z-50 bg-classic-900/95 backdrop-blur-md border-b border-gold-500/20 text-white transition-all duration-300">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="flex items-center justify-between h-20">
+        
+        <!-- Logo e Titolo Scuola -->
+        <a href="#hero" class="flex items-center gap-3.5 group">
+          <div class="w-12 h-12 rounded-xl bg-gradient-to-br from-gold-500 to-gold-700 flex items-center justify-center shadow-lg shadow-gold-500/20 group-hover:scale-105 transition-transform duration-300">
+            <i data-lucide="landmark" class="w-6 h-6 text-classic-950"></i>
+          </div>
+          <div>
+            <div class="flex items-center gap-2">
+              <span class="font-serif text-xl sm:text-2xl font-bold tracking-tight text-white group-hover:text-gold-300 transition-colors">
+                Sinfonia Empedocle
+              </span>
+              <span class="hidden sm:inline-block px-2 py-0.5 text-[10px] font-semibold tracking-wider uppercase bg-gold-500/20 text-gold-300 border border-gold-500/30 rounded-full">
+                Lista Elettorale
+              </span>
+            </div>
+            <p class="text-xs text-slate-300 tracking-wide font-medium">
+              Liceo Classico e Musicale "Empedocle" • Agrigento
+            </p>
+          </div>
+        </a>
+
+        <!-- Desktop Navigation -->
+        <nav class="hidden md:flex items-center gap-7 text-sm font-medium">
+          <a href="#hero" class="text-slate-200 hover:text-gold-300 transition-colors py-1 relative hover:after:w-full after:w-0 after:h-0.5 after:bg-gold-400 after:absolute after:bottom-0 after:left-0 after:transition-all">Benvenuto</a>
+          <a href="#servizi" class="text-slate-200 hover:text-gold-300 transition-colors py-1 relative hover:after:w-full after:w-0 after:h-0.5 after:bg-gold-400 after:absolute after:bottom-0 after:left-0 after:transition-all">Servizi</a>
+          <a href="#candidati" class="text-slate-200 hover:text-gold-300 transition-colors py-1 relative hover:after:w-full after:w-0 after:h-0.5 after:bg-gold-400 after:absolute after:bottom-0 after:left-0 after:transition-all">Candidati</a>
+          <a href="#programma" class="text-slate-200 hover:text-gold-300 transition-colors py-1 relative hover:after:w-full after:w-0 after:h-0.5 after:bg-gold-400 after:absolute after:bottom-0 after:left-0 after:transition-all">Programma</a>
+          <a href="#scuolazoo" class="flex items-center gap-1.5 text-gold-300 hover:text-gold-200 font-semibold px-2 py-1 rounded bg-gold-500/10 border border-gold-500/20 transition-all">
+            <i data-lucide="sparkles" class="w-3.5 h-3.5 text-gold-400"></i>
+            Partnership SZ
+          </a>
+        </nav>
+
+        <!-- CTA Segnalazioni Rapido -->
+        <div class="hidden sm:flex items-center gap-3">
+          <button onclick="openModal('segnalazioniModal')" class="inline-flex items-center gap-2 px-4 py-2 text-xs font-bold uppercase tracking-wider bg-gradient-to-r from-gold-500 to-gold-600 text-classic-950 rounded-lg hover:from-gold-400 hover:to-gold-500 shadow-md shadow-gold-600/20 hover:shadow-gold-500/30 transition-all duration-200 hover:-translate-y-0.5">
+            <i data-lucide="message-square-plus" class="w-4 h-4"></i>
+            Invia Segnalazione
+          </button>
+        </div>
+
+        <!-- Mobile Menu Toggle Button -->
+        <button id="mobileMenuBtn" class="md:hidden p-2 text-slate-300 hover:text-white focus:outline-none" aria-label="Apri menu">
+          <i data-lucide="menu" class="w-6 h-6"></i>
+        </button>
+
+      </div>
+    </div>
+
+    <!-- Mobile Dropdown Menu -->
+    <div id="mobileMenu" class="hidden md:hidden bg-classic-950 border-b border-gold-500/20 px-4 pt-2 pb-6 space-y-3">
+      <a href="#hero" onclick="toggleMobileMenu()" class="block py-2 text-slate-200 hover:text-gold-300 font-medium">Benvenuto</a>
+      <a href="#servizi" onclick="toggleMobileMenu()" class="block py-2 text-slate-200 hover:text-gold-300 font-medium">Servizi</a>
+      <a href="#candidati" onclick="toggleMobileMenu()" class="block py-2 text-slate-200 hover:text-gold-300 font-medium">Candidati</a>
+      <a href="#programma" onclick="toggleMobileMenu()" class="block py-2 text-slate-200 hover:text-gold-300 font-medium">I Punti Programmatici</a>
+      <a href="#scuolazoo" onclick="toggleMobileMenu()" class="block py-2 text-gold-300 font-semibold">Partnership ScuolaZoo</a>
+      <div class="pt-3 border-t border-slate-800 flex flex-col gap-2">
+        <button onclick="openModal('segnalazioniModal'); toggleMobileMenu()" class="w-full text-center py-2.5 text-xs font-bold uppercase tracking-wider bg-gold-500 text-classic-950 rounded-lg">
+          Invia Segnalazione
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <!-- ========================================================= -->
+  <!-- 1. HERO SECTION (BENVENUTO)                               -->
+  <!-- ========================================================= -->
+  <section id="hero" class="relative overflow-hidden classical-gradient text-white py-24 lg:py-32 border-b border-gold-500/20">
+    <!-- Glow atmosferici di sfondo -->
+    <div class="hero-glow -top-32 -left-32"></div>
+    <div class="hero-glow -bottom-40 -right-20"></div>
+
+    <!-- Sfondo con pattern dorico/geometrico a filigrana -->
+    <div class="absolute inset-0 opacity-10 bg-[radial-gradient(#d97706_1px,transparent_1px)] [background-size:28px_28px] pointer-events-none"></div>
+
+    <div class="relative max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="grid grid-cols-1 lg:grid-cols-12 gap-12 lg:gap-8 items-center">
+        
+        <!-- Testo Hero -->
+        <div class="lg:col-span-7 space-y-6 text-center lg:text-left">
+          
+          <div class="inline-flex items-center gap-2.5 px-3.5 py-1.5 rounded-full bg-slate-800/80 border border-gold-500/30 backdrop-blur-md shadow-sm">
+            <span class="flex h-2 w-2 rounded-full bg-gold-400 animate-pulse"></span>
+            <span class="text-xs font-semibold uppercase tracking-widest text-gold-300">
+              Rappresentanza d'Istituto 2026 / 2027
+            </span>
+          </div>
+
+          <h1 class="font-serif text-4xl sm:text-5xl lg:text-6xl font-extrabold tracking-tight leading-tight">
+            Benvenuto su <br class="hidden sm:inline" />
+            <span class="gold-gradient-text">Sinfonia Empedocle</span>
+          </h1>
+
+          <p class="text-xl sm:text-2xl text-slate-200 font-serif italic text-gold-200/90 font-light">
+            La piattaforma integrata per la scuola.
+          </p>
+
+          <p class="text-base sm:text-lg text-slate-300 max-w-2xl mx-auto lg:mx-0 leading-relaxed font-normal">
+            L'armonia del sapere classico si fonde con la voce viva del Liceo Musicale. Uno spazio digitale progettato per dare voce concreta a ogni studente di Agrigento: appunti condivisi, segnalazioni dirette e grandi progetti condivisi.
+          </p>
+
+          <!-- Azioni / CTA -->
+          <div class="pt-4 flex flex-wrap items-center justify-center lg:justify-start gap-4">
+            <a href="#servizi" class="inline-flex items-center justify-center gap-2.5 px-7 py-3.5 rounded-xl bg-gradient-to-r from-gold-500 to-gold-600 text-classic-950 font-bold text-sm tracking-wide shadow-lg shadow-gold-500/25 hover:from-gold-400 hover:to-gold-500 transition-all duration-200 hover:-translate-y-0.5">
+              <i data-lucide="compass" class="w-4 h-4"></i>
+              Scegli il tuo Servizio
+            </a>
+            <a href="#programma" class="inline-flex items-center justify-center gap-2.5 px-7 py-3.5 rounded-xl bg-slate-800/80 hover:bg-slate-700/80 text-white font-semibold text-sm tracking-wide border border-slate-700 hover:border-gold-500/50 backdrop-blur-sm transition-all duration-200">
+              <i data-lucide="file-text" class="w-4 h-4 text-gold-400"></i>
+              I Nostri 8 Punti
+            </a>
+          </div>
+
+          <!-- Indicatori Rapidi / Valori Istituzionali -->
+          <div class="pt-8 border-t border-slate-800/80 grid grid-cols-3 gap-4 text-center lg:text-left">
+            <div>
+              <div class="font-serif text-2xl font-bold text-gold-300">2 Sedi</div>
+              <div class="text-xs text-slate-400 uppercase tracking-wider font-medium">Centrale & Succursali</div>
+            </div>
+            <div>
+              <div class="font-serif text-2xl font-bold text-gold-300">Classico + Musicale</div>
+              <div class="text-xs text-slate-400 uppercase tracking-wider font-medium">Unità d'Indirizzo</div>
+            </div>
+            <div>
+              <div class="font-serif text-2xl font-bold text-gold-300">100% Ascolto</div>
+              <div class="text-xs text-slate-400 uppercase tracking-wider font-medium">Trasparenza Totale</div>
+            </div>
+          </div>
+
+        </div>
+
+        <!-- Elemento Visivo / Illustrazione Elegante Classico & Musicale -->
+        <div class="lg:col-span-5 flex justify-center">
+          <div class="relative w-full max-w-md">
+            
+            <!-- Cornice artistica a tema Magna Grecia / Musica / Sapere -->
+            <div class="relative rounded-3xl p-1 bg-gradient-to-b from-gold-400/40 via-gold-600/10 to-transparent shadow-2xl">
+              <div class="rounded-[22px] bg-classic-900/90 border border-slate-700/60 p-6 sm:p-8 backdrop-blur-xl space-y-6">
+                
+                <!-- Stemma Visivo Empedocle -->
+                <div class="flex items-center justify-between pb-4 border-b border-slate-800">
+                  <div class="flex items-center gap-3">
+                    <div class="w-12 h-12 rounded-xl bg-gold-500/10 border border-gold-500/30 flex items-center justify-center text-gold-400">
+                      <i data-lucide="music-2" class="w-6 h-6"></i>
+                    </div>
+                    <div>
+                      <div class="text-xs uppercase tracking-widest text-slate-400 font-semibold">Agrigento • Akragas</div>
+                      <div class="font-serif text-lg font-bold text-white">Empedocle in Armonia</div>
+                    </div>
+                  </div>
+                  <span class="px-2.5 py-1 text-[11px] font-bold rounded-md bg-gold-500/20 text-gold-300 border border-gold-500/30">
+                    2026/27
+                  </span>
+                </div>
+
+                <!-- Composizione artistica SVG: Tempio della Concordia + Chiave di Violino + Alloro -->
+                <div class="relative bg-gradient-to-b from-classic-800 to-classic-950 rounded-2xl p-6 border border-slate-700/50 flex flex-col items-center justify-center text-center overflow-hidden min-h-[220px]">
+                  
+                  <!-- Cerchi d'armonia e linee acustiche stilizzate -->
+                  <div class="absolute inset-0 flex items-center justify-center opacity-20 pointer-events-none">
+                    <div class="w-48 h-48 rounded-full border border-gold-400 animate-spin" style="animation-duration: 40s;"></div>
+                    <div class="w-36 h-36 rounded-full border border-dashed border-gold-300"></div>
+                  </div>
+
+                  <!-- Icona centrale sinergica -->
+                  <div class="relative z-10 w-20 h-20 rounded-2xl bg-gradient-to-tr from-gold-600 to-gold-400 p-0.5 shadow-xl shadow-gold-500/20 mb-3 flex items-center justify-center">
+                    <div class="w-full h-full bg-classic-950 rounded-[14px] flex items-center justify-center text-gold-300">
+                      <!-- Simbolo Ibrido Classico & Musica -->
+                      <svg class="w-11 h-11" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round">
+                        <!-- Colonne del tempio -->
+                        <path d="M3 21h18"/>
+                        <path d="M5 21V9"/>
+                        <path d="M19 21V9"/>
+                        <path d="M2 9h20"/>
+                        <path d="M12 3L2 9h20L12 3z"/>
+                        <!-- Elemento musicale centrale -->
+                        <path d="M12 9v7a2 2 0 1 1-2-2h2"/>
+                      </svg>
+                    </div>
+                  </div>
+
+                  <h2 class="relative z-10 font-serif text-lg font-bold text-white tracking-wide">
+                    Tradizione Millenaria & Futuro Digitale
+                  </h2>
+                  <p class="relative z-10 text-xs text-slate-300 mt-1 max-w-xs">
+                    Dal Tempio della Concordia ai palchi musicali: una lista costruita sulla dedizione e sulla partecipazione di ciascuno di noi.
+                  </p>
+                </div>
+
+                <!-- Quote filosofico empedocleo -->
+                <div class="p-3.5 bg-slate-800/40 rounded-xl border border-slate-700/40 flex items-start gap-3">
+                  <i data-lucide="quote" class="w-5 h-5 text-gold-400 shrink-0 mt-0.5"></i>
+                  <p class="text-xs text-slate-300 italic">
+                    «Dall'armonia degli elementi nasce la bellezza universale.» — Empedocle di Agrigento
+                  </p>
+                </div>
+
+              </div>
+            </div>
+
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ========================================================= -->
+  <!-- 2. SEZIONE SERVIZI                                        -->
+  <!-- ========================================================= -->
+  <section id="servizi" class="py-24 bg-white relative greek-pattern border-b border-slate-200">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      
+      <!-- Intestazione Sezione -->
+      <div class="text-center max-w-3xl mx-auto mb-16">
+        <div class="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-gold-100 text-gold-800 font-semibold text-xs uppercase tracking-wider mb-3">
+          <i data-lucide="layers" class="w-3.5 h-3.5"></i>
+          Strumenti Concreti per la Nostra Scuola
+        </div>
+        <h2 class="font-serif text-3xl sm:text-4xl lg:text-5xl font-extrabold text-classic-900 tracking-tight">
+          Scegli il servizio di cui hai bisogno
+        </h2>
+        <div class="w-20 h-1 bg-gradient-to-r from-gold-500 to-gold-600 mx-auto mt-4 rounded-full"></div>
+        <p class="text-base sm:text-lg text-slate-600 mt-4 leading-relaxed font-normal">
+          Non semplici promesse elettorali, ma strumenti digitali già pronti e pensati per semplificare la vita scolastica quotidiana al Liceo Empedocle.
+        </p>
+      </div>
+
+      <!-- Grid a 2 Card dei Servizi Principali -->
+      <div class="grid grid-cols-1 md:grid-cols-2 gap-8 lg:gap-10">
+        
+        <!-- ================= CARD 1: HUB APPUNTI ================= -->
+        <div class="group relative bg-white rounded-3xl p-8 sm:p-10 border border-slate-200/80 shadow-md hover:shadow-card-hover transition-all duration-300 hover:-translate-y-1.5 flex flex-col justify-between overflow-hidden">
+          
+          <!-- Bordo superiore colorato decorativo -->
+          <div class="absolute top-0 left-0 right-0 h-1.5 bg-gradient-to-r from-gold-500 to-amber-600"></div>
+          
+          <div>
+            <!-- Icona e Badge -->
+            <div class="flex items-center justify-between mb-6">
+              <div class="w-16 h-16 rounded-2xl bg-gradient-to-br from-gold-100 to-gold-50 border border-gold-200 flex items-center justify-center text-gold-700 shadow-sm group-hover:scale-110 group-hover:bg-gold-500 group-hover:text-white transition-all duration-300">
+                <i data-lucide="book-open" class="w-8 h-8"></i>
+              </div>
+              <span class="px-3 py-1 text-xs font-bold uppercase tracking-wider text-gold-800 bg-gold-50 border border-gold-200 rounded-full">
+                Condivisione & Didattica
+              </span>
+            </div>
+
+            <!-- Titolo Servizio -->
+            <h3 class="font-serif text-2xl sm:text-3xl font-bold text-classic-900 mb-4 group-hover:text-gold-700 transition-colors">
+              Card 1 — Hub Appunti
+            </h3>
+
+            <!-- Testo Descrittivo Ufficiale -->
+            <p class="text-slate-600 text-base sm:text-lg leading-relaxed mb-6 font-normal">
+              Scarica schemi di sintesi, mappe concettuali e riassunti preparati direttamente dagli studenti, oppure condividi i tuoi materiali con l'intera comunità scolastica.
+            </p>
+
+            <!-- Punti salienti / Badge Materie -->
+            <div class="space-y-3 pt-2 pb-6 border-t border-slate-100 text-sm text-slate-700">
+              <div class="flex items-center gap-2.5">
+                <i data-lucide="check-circle-2" class="w-5 h-5 text-emerald-600 shrink-0"></i>
+                <span><strong>Indirizzo Classico:</strong> Greco, Latino, Filosofia, Storia dell'Arte</span>
+              </div>
+              <div class="flex items-center gap-2.5">
+                <i data-lucide="check-circle-2" class="w-5 h-5 text-emerald-600 shrink-0"></i>
+                <span><strong>Indirizzo Musicale:</strong> Teoria, Analisi, Composizione, Storia della Musica</span>
+              </div>
+              <div class="flex items-center gap-2.5">
+                <i data-lucide="check-circle-2" class="w-5 h-5 text-emerald-600 shrink-0"></i>
+                <span><strong>Open Source scolastico:</strong> Archivio gratuito, ordinato per classe e materia</span>
+              </div>
+            </div>
+          </div>
+
+          <!-- Pulsante Azione Card 1 -->
+          <div class="pt-4 flex flex-col sm:flex-row gap-3">
+            <button onclick="openModal('appuntiModal')" class="flex-1 inline-flex items-center justify-center gap-2 px-5 py-3 rounded-xl bg-classic-900 text-white font-semibold text-sm hover:bg-classic-800 shadow hover:shadow-lg transition-all">
+              <i data-lucide="download" class="w-4 h-4 text-gold-400"></i>
+              Accedi all'Hub Appunti
+            </button>
+            <button onclick="openModal('uploadAppuntiModal')" class="inline-flex items-center justify-center gap-2 px-4 py-3 rounded-xl bg-gold-50 text-gold-800 border border-gold-300 font-semibold text-sm hover:bg-gold-100 transition-all">
+              <i data-lucide="upload" class="w-4 h-4"></i>
+              Carica Materiale
+            </button>
+          </div>
+
+        </div>
+
+        <!-- ================= CARD 2: BACHECA SEGNALAZIONI ================= -->
+        <div class="group relative bg-white rounded-3xl p-8 sm:p-10 border border-slate-200/80 shadow-md hover:shadow-card-hover transition-all duration-300 hover:-translate-y-1.5 flex flex-col justify-between overflow-hidden">
+          
+          <!-- Bordo superiore colorato decorativo -->
+          <div class="absolute top-0 left-0 right-0 h-1.5 bg-gradient-to-r from-classic-700 to-classic-900"></div>
+
+          <div>
+            <!-- Icona e Badge -->
+            <div class="flex items-center justify-between mb-6">
+              <div class="w-16 h-16 rounded-2xl bg-gradient-to-br from-slate-100 to-slate-50 border border-slate-200 flex items-center justify-center text-classic-800 shadow-sm group-hover:scale-110 group-hover:bg-classic-900 group-hover:text-white transition-all duration-300">
+                <i data-lucide="megaphone" class="w-8 h-8"></i>
+              </div>
+              <span class="px-3 py-1 text-xs font-bold uppercase tracking-wider text-classic-800 bg-slate-100 border border-slate-300 rounded-full">
+                Canale Istituzionale Diretto
+              </span>
+            </div>
+
+            <!-- Titolo Servizio -->
+            <h3 class="font-serif text-2xl sm:text-3xl font-bold text-classic-900 mb-4 group-hover:text-classic-700 transition-colors">
+              Card 2 — Bacheca Segnalazioni
+            </h3>
+
+            <!-- Testo Descrittivo Ufficiale -->
+            <p class="text-slate-600 text-base sm:text-lg leading-relaxed mb-6 font-normal">
+              Il modulo ufficiale per sottoporre le problematiche delle varie sedi in vista del Consiglio d'Istituto e delle prossime assemblee. La tua voce conta davvero: segnala qui i disservizi o le tue proposte.
+            </p>
+
+            <!-- Punti salienti / Garanzie -->
+            <div class="space-y-3 pt-2 pb-6 border-t border-slate-100 text-sm text-slate-700">
+              <div class="flex items-center gap-2.5">
+                <i data-lucide="shield-check" class="w-5 h-5 text-blue-600 shrink-0"></i>
+                <span><strong>Anonimato garantito:</strong> Puoi inviare segnalazioni anche senza nominativo</span>
+              </div>
+              <div class="flex items-center gap-2.5">
+                <i data-lucide="map-pin" class="w-5 h-5 text-blue-600 shrink-0"></i>
+                <span><strong>Copertura totale sedi:</strong> Sede Centrale, Succursali e Laboratori</span>
+              </div>
+              <div class="flex items-center gap-2.5">
+                <i data-lucide="clock" class="w-5 h-5 text-blue-600 shrink-0"></i>
+                <span><strong>Presa in carico diretta:</strong> Portate al primo Consiglio d'Istituto utile</span>
+              </div>
+            </div>
+          </div>
+
+          <!-- Pulsante Azione Card 2 -->
+          <div class="pt-4">
+            <button onclick="openModal('segnalazioniModal')" class="w-full inline-flex items-center justify-center gap-2 px-5 py-3.5 rounded-xl bg-gradient-to-r from-gold-500 to-gold-600 text-classic-950 font-bold text-sm tracking-wide shadow-md hover:from-gold-400 hover:to-gold-500 transition-all">
+              <i data-lucide="edit-3" class="w-4 h-4"></i>
+              Compila il Modulo Ufficiale di Segnalazione
+            </button>
+          </div>
+
+        </div>
+
+      </div>
+
+    </div>
+  </section>
+
+  <!-- ========================================================= -->
+  <!-- 3. I CANDIDATI ALLA RAPPRESENTANZA D'ISTITUTO             -->
+  <!-- ========================================================= -->
+  <section id="candidati" class="py-24 bg-slate-900 text-white relative classical-gradient border-b border-gold-500/20">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      
+      <!-- Intestazione Sezione -->
+      <div class="text-center max-w-3xl mx-auto mb-16">
+        <div class="inline-flex items-center gap-2 px-3.5 py-1.5 rounded-full bg-gold-500/20 text-gold-300 font-semibold text-xs uppercase tracking-widest border border-gold-500/30 mb-3">
+          <i data-lucide="award" class="w-4 h-4"></i>
+          Leadership & Rappresentanza
+        </div>
+        <h2 class="font-serif text-3xl sm:text-4xl lg:text-5xl font-extrabold tracking-tight text-white">
+          I Candidati alla Rappresentanza d'Istituto
+        </h2>
+        <div class="w-20 h-1 bg-gradient-to-r from-gold-400 to-gold-600 mx-auto mt-4 rounded-full"></div>
+        <p class="text-base sm:text-lg text-slate-300 mt-4 leading-relaxed font-normal">
+          Due profili complementari guidati da passione civica, ascolto continuo e amore profondo per il Liceo Classico e Musicale "Empedocle".
+        </p>
+      </div>
+
+      <!-- Griglia Candidati: Layout Elegante e Professionale -->
+      <div class="grid grid-cols-1 md:grid-cols-2 gap-8 lg:gap-12 max-w-5xl mx-auto">
+        
+        <!-- CANDIDATO 1: Giuseppe Cristian Puma -->
+        <div class="bg-classic-950/80 rounded-3xl p-8 sm:p-10 border border-gold-500/30 shadow-2xl relative flex flex-col justify-between group hover:border-gold-400/60 transition-all duration-300">
+          
+          <!-- Elemento decorativo d'angolo -->
+          <div class="absolute top-4 right-4 text-gold-500/30 group-hover:text-gold-400/60 transition-colors">
+            <i data-lucide="quote" class="w-10 h-10"></i>
+          </div>
+
+          <div>
+            <div class="flex items-center gap-5 mb-6">
+              <!-- Avatar stilizzato istituzionale -->
+              <div class="w-20 h-20 rounded-2xl bg-gradient-to-tr from-gold-600 via-gold-500 to-amber-300 p-0.5 shadow-lg shadow-gold-500/20 shrink-0">
+                <div class="w-full h-full bg-classic-900 rounded-[14px] flex items-center justify-center font-serif text-2xl font-bold text-gold-300">
+                  GCP
+                </div>
+              </div>
+              <div>
+                <span class="px-2.5 py-0.5 text-[10px] font-bold uppercase tracking-wider text-gold-300 bg-gold-500/20 border border-gold-500/30 rounded-full">
+                  Candidato Rappresentante
+                </span>
+                <h3 class="font-serif text-2xl sm:text-3xl font-bold text-white mt-1">
+                  Giuseppe Cristian Puma
+                </h3>
+                <p class="text-sm text-slate-300 font-medium">
+                  Liceo Classico e Musicale "Empedocle"
+                </p>
+              </div>
+            </div>
+
+            <p class="text-slate-300 text-sm sm:text-base leading-relaxed mb-6 font-normal">
+              «Vogliamo una scuola in cui la voce di ogni studente sia il fulcro delle decisioni del Consiglio d'Istituto. Con rigore, trasparenza e costante dialogo tra le sedi, trasformeremo le idee in azioni reali e tangibili.»
+            </p>
+
+            <!-- Aree di competenza e focalizzazione -->
+            <div class="space-y-2.5 py-4 border-y border-slate-800 text-xs sm:text-sm text-slate-300">
+              <div class="flex items-center gap-2">
+                <i data-lucide="check" class="w-4 h-4 text-gold-400"></i>
+                <span>Coordinamento istituzionale & Consiglio d'Istituto</span>
+              </div>
+              <div class="flex items-center gap-2">
+                <i data-lucide="check" class="w-4 h-4 text-gold-400"></i>
+                <span>Digitalizzazione comunicazioni e ascolto delle sedi</span>
+              </div>
+              <div class="flex items-center gap-2">
+                <i data-lucide="check" class="w-4 h-4 text-gold-400"></i>
+                <span>Potenziamento eventi culturali e progetti tra scuole</span>
+              </div>
+            </div>
+          </div>
+
+          <!-- Profilo Social e Contatto Ufficiale -->
+          <div class="pt-6">
+            <a href="https://instagram.com/giuseppecristian_puma" target="_blank" rel="noopener noreferrer" class="inline-flex items-center justify-between w-full px-5 py-3 rounded-xl bg-slate-800/80 hover:bg-gold-500 text-white hover:text-classic-950 font-semibold text-sm border border-slate-700 hover:border-gold-400 transition-all duration-200 group/btn">
+              <div class="flex items-center gap-2.5">
+                <i data-lucide="instagram" class="w-5 h-5 text-gold-400 group-hover/btn:text-classic-950 transition-colors"></i>
+                <span>@giuseppecristian_puma</span>
+              </div>
+              <i data-lucide="external-link" class="w-4 h-4 opacity-70 group-hover/btn:opacity-100"></i>
+            </a>
+          </div>
+
+        </div>
+
+        <!-- CANDIDATO 2: Pietro Figliomeni -->
+        <div class="bg-classic-950/80 rounded-3xl p-8 sm:p-10 border border-gold-500/30 shadow-2xl relative flex flex-col justify-between group hover:border-gold-400/60 transition-all duration-300">
+          
+          <!-- Elemento decorativo d'angolo -->
+          <div class="absolute top-4 right-4 text-gold-500/30 group-hover:text-gold-400/60 transition-colors">
+            <i data-lucide="quote" class="w-10 h-10"></i>
+          </div>
+
+          <div>
+            <div class="flex items-center gap-5 mb-6">
+              <!-- Avatar stilizzato istituzionale -->
+              <div class="w-20 h-20 rounded-2xl bg-gradient-to-tr from-gold-600 via-gold-500 to-amber-300 p-0.5 shadow-lg shadow-gold-500/20 shrink-0">
+                <div class="w-full h-full bg-classic-900 rounded-[14px] flex items-center justify-center font-serif text-2xl font-bold text-gold-300">
+                  PF
+                </div>
+              </div>
+              <div>
+                <span class="px-2.5 py-0.5 text-[10px] font-bold uppercase tracking-wider text-gold-300 bg-gold-500/20 border border-gold-500/30 rounded-full">
+                  Candidato Rappresentante
+                </span>
+                <h3 class="font-serif text-2xl sm:text-3xl font-bold text-white mt-1">
+                  Pietro Figliomeni
+                </h3>
+                <p class="text-sm text-slate-300 font-medium">
+                  Liceo Classico e Musicale "Empedocle"
+                </p>
+              </div>
+            </div>
+
+            <p class="text-slate-300 text-sm sm:text-base leading-relaxed mb-6 font-normal">
+              «L'Empedocle è una comunità che vive di creatività, musica e spirito critico. Lavoreremo per creare spazi moderni, tornei sportivi, convenzioni concrete per gli studenti e un ponte solido verso l'università.»
+            </p>
+
+            <!-- Aree di competenza e focalizzazione -->
+            <div class="space-y-2.5 py-4 border-y border-slate-800 text-xs sm:text-sm text-slate-300">
+              <div class="flex items-center gap-2">
+                <i data-lucide="check" class="w-4 h-4 text-gold-400"></i>
+                <span>Animazione studentesca, serate ed eventi musicali</span>
+              </div>
+              <div class="flex items-center gap-2">
+                <i data-lucide="check" class="w-4 h-4 text-gold-400"></i>
+                <span>Convenzioni commerciali locali & Carta dello Studente</span>
+              </div>
+              <div class="flex items-center gap-2">
+                <i data-lucide="check" class="w-4 h-4 text-gold-400"></i>
+                <span>Supporto logistico e manutenzione aule e strumenti</span>
+              </div>
+            </div>
+          </div>
+
+          <!-- Profilo Social e Contatto Ufficiale -->
+          <div class="pt-6">
+            <a href="https://instagram.com/pietro_figliomeni" target="_blank" rel="noopener noreferrer" class="inline-flex items-center justify-between w-full px-5 py-3 rounded-xl bg-slate-800/80 hover:bg-gold-500 text-white hover:text-classic-950 font-semibold text-sm border border-slate-700 hover:border-gold-400 transition-all duration-200 group/btn">
+              <div class="flex items-center gap-2.5">
+                <i data-lucide="instagram" class="w-5 h-5 text-gold-400 group-hover/btn:text-classic-950 transition-colors"></i>
+                <span>@pietro_figliomeni</span>
+              </div>
+              <i data-lucide="external-link" class="w-4 h-4 opacity-70 group-hover/btn:opacity-100"></i>
+            </a>
+          </div>
+
+        </div>
+
+      </div>
+
+    </div>
+  </section>
+
+  <!-- ========================================================= -->
+  <!-- 4. I NOSTRI PUNTI PROGRAMMATICI (GRIGLIA DEGLI 8 PUNTI)   -->
+  <!-- ========================================================= -->
+  <section id="programma" class="py-24 bg-slate-50 relative greek-pattern border-b border-slate-200">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      
+      <!-- Intestazione Sezione -->
+      <div class="text-center max-w-3xl mx-auto mb-16">
+        <div class="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-classic-900 text-gold-300 font-semibold text-xs uppercase tracking-wider mb-3">
+          <i data-lucide="list-checks" class="w-3.5 h-3.5"></i>
+          Impegni Concreti & Obiettivi Chiari
+        </div>
+        <h2 class="font-serif text-3xl sm:text-4xl lg:text-5xl font-extrabold text-classic-900 tracking-tight">
+          I Nostri Punti Programmatici
+        </h2>
+        <div class="w-20 h-1 bg-gradient-to-r from-gold-500 to-gold-600 mx-auto mt-4 rounded-full"></div>
+        <p class="text-base sm:text-lg text-slate-600 mt-4 leading-relaxed font-normal">
+          Un programma elettorale strutturato su 8 assi strategici per valorizzare al massimo il nostro percorso scolastico e umano all'Empedocle.
+        </p>
+      </div>
+
+      <!-- Griglia Pulita ed Elegante degli 8 Punti Programmatici -->
+      <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6">
+        
+        <!-- PUNTO 1 -->
+        <div class="bg-white rounded-2xl p-6 border border-slate-200/90 shadow-sm hover:shadow-card-hover hover:border-gold-500/50 transition-all duration-300 hover:-translate-y-1 flex flex-col justify-between group">
+          <div>
+            <div class="flex items-center justify-between mb-4">
+              <span class="w-9 h-9 rounded-xl bg-classic-900 text-gold-300 font-serif font-bold text-sm flex items-center justify-center shadow">
+                01
+              </span>
+              <div class="w-10 h-10 rounded-xl bg-gold-50 text-gold-700 flex items-center justify-center group-hover:scale-110 transition-transform">
+                <i data-lucide="building-2" class="w-5 h-5"></i>
+              </div>
+            </div>
+            <h3 class="font-serif text-lg font-bold text-classic-900 mb-2 group-hover:text-gold-700 transition-colors">
+              Strutture ed infrastrutture
+            </h3>
+            <p class="text-sm text-slate-600 leading-relaxed font-normal">
+              Ammodernamento e manutenzione degli spazi scolastici, monitoraggio aule, riscaldamento e laboratori per entrambe le sedi.
+            </p>
+          </div>
+          <div class="mt-4 pt-3 border-t border-slate-100 flex items-center text-xs font-semibold text-slate-400 group-hover:text-gold-600 transition-colors">
+            <span>Priorità Immediata</span>
+            <i data-lucide="arrow-right" class="w-3.5 h-3.5 ml-auto"></i>
+          </div>
+        </div>
+
+        <!-- PUNTO 2 -->
+        <div class="bg-white rounded-2xl p-6 border border-slate-200/90 shadow-sm hover:shadow-card-hover hover:border-gold-500/50 transition-all duration-300 hover:-translate-y-1 flex flex-col justify-between group">
+          <div>
+            <div class="flex items-center justify-between mb-4">
+              <span class="w-9 h-9 rounded-xl bg-classic-900 text-gold-300 font-serif font-bold text-sm flex items-center justify-center shadow">
+                02
+              </span>
+              <div class="w-10 h-10 rounded-xl bg-gold-50 text-gold-700 flex items-center justify-center group-hover:scale-110 transition-transform">
+                <i data-lucide="graduation-cap" class="w-5 h-5"></i>
+              </div>
+            </div>
+            <h3 class="font-serif text-lg font-bold text-classic-900 mb-2 group-hover:text-gold-700 transition-colors">
+              Incontri culturali
+            </h3>
+            <p class="text-sm text-slate-600 leading-relaxed font-normal">
+              Dibattiti, conferenze e seminari di approfondimento con ospiti d'eccezione dal mondo accademico, artistico e professionale.
+            </p>
+          </div>
+          <div class="mt-4 pt-3 border-t border-slate-100 flex items-center text-xs font-semibold text-slate-400 group-hover:text-gold-600 transition-colors">
+            <span>Formazione Critica</span>
+            <i data-lucide="arrow-right" class="w-3.5 h-3.5 ml-auto"></i>
+          </div>
+        </div>
+
+        <!-- PUNTO 3 -->
+        <div class="bg-white rounded-2xl p-6 border border-slate-200/90 shadow-sm hover:shadow-card-hover hover:border-gold-500/50 transition-all duration-300 hover:-translate-y-1 flex flex-col justify-between group">
+          <div>
+            <div class="flex items-center justify-between mb-4">
+              <span class="w-9 h-9 rounded-xl bg-classic-900 text-gold-300 font-serif font-bold text-sm flex items-center justify-center shadow">
+                03
+              </span>
+              <div class="w-10 h-10 rounded-xl bg-gold-50 text-gold-700 flex items-center justify-center group-hover:scale-110 transition-transform">
+                <i data-lucide="trophy" class="w-5 h-5"></i>
+              </div>
+            </div>
+            <h3 class="font-serif text-lg font-bold text-classic-900 mb-2 group-hover:text-gold-700 transition-colors">
+              Sport e benessere
+            </h3>
+            <p class="text-sm text-slate-600 leading-relaxed font-normal">
+              Tornei d'istituto (calcio, pallavolo, scacchi) e attività volte al benessere psicofisico e alla socialità positiva tra classi.
+            </p>
+          </div>
+          <div class="mt-4 pt-3 border-t border-slate-100 flex items-center text-xs font-semibold text-slate-400 group-hover:text-gold-600 transition-colors">
+            <span>Energia & Benessere</span>
+            <i data-lucide="arrow-right" class="w-3.5 h-3.5 ml-auto"></i>
+          </div>
+        </div>
+
+        <!-- PUNTO 4 -->
+        <div class="bg-white rounded-2xl p-6 border border-slate-200/90 shadow-sm hover:shadow-card-hover hover:border-gold-500/50 transition-all duration-300 hover:-translate-y-1 flex flex-col justify-between group">
+          <div>
+            <div class="flex items-center justify-between mb-4">
+              <span class="w-9 h-9 rounded-xl bg-classic-900 text-gold-300 font-serif font-bold text-sm flex items-center justify-center shadow">
+                04
+              </span>
+              <div class="w-10 h-10 rounded-xl bg-gold-50 text-gold-700 flex items-center justify-center group-hover:scale-110 transition-transform">
+                <i data-lucide="message-circle" class="w-5 h-5"></i>
+              </div>
+            </div>
+            <h3 class="font-serif text-lg font-bold text-classic-900 mb-2 group-hover:text-gold-700 transition-colors">
+              Canali WhatsApp d'istituto
+            </h3>
+            <p class="text-sm text-slate-600 leading-relaxed font-normal">
+              Digitalizzazione delle comunicazioni e info-point immediato con avvisi in tempo reale per circolari, scioperi ed eventi.
+            </p>
+          </div>
+          <div class="mt-4 pt-3 border-t border-slate-100 flex items-center text-xs font-semibold text-slate-400 group-hover:text-gold-600 transition-colors">
+            <span>Comunicazione Diretta</span>
+            <i data-lucide="arrow-right" class="w-3.5 h-3.5 ml-auto"></i>
+          </div>
+        </div>
+
+        <!-- PUNTO 5 -->
+        <div class="bg-white rounded-2xl p-6 border border-slate-200/90 shadow-sm hover:shadow-card-hover hover:border-gold-500/50 transition-all duration-300 hover:-translate-y-1 flex flex-col justify-between group">
+          <div>
+            <div class="flex items-center justify-between mb-4">
+              <span class="w-9 h-9 rounded-xl bg-classic-900 text-gold-300 font-serif font-bold text-sm flex items-center justify-center shadow">
+                05
+              </span>
+              <div class="w-10 h-10 rounded-xl bg-gold-50 text-gold-700 flex items-center justify-center group-hover:scale-110 transition-transform">
+                <i data-lucide="network" class="w-5 h-5"></i>
+              </div>
+            </div>
+            <h3 class="font-serif text-lg font-bold text-classic-900 mb-2 group-hover:text-gold-700 transition-colors">
+              Collaborazioni tra scuole
+            </h3>
+            <p class="text-sm text-slate-600 leading-relaxed font-normal">
+              Reti studentesche e progetti interistituzionali con gli altri istituti superiori della provincia per iniziative condivise.
+            </p>
+          </div>
+          <div class="mt-4 pt-3 border-t border-slate-100 flex items-center text-xs font-semibold text-slate-400 group-hover:text-gold-600 transition-colors">
+            <span>Rete Cittadina</span>
+            <i data-lucide="arrow-right" class="w-3.5 h-3.5 ml-auto"></i>
+          </div>
+        </div>
+
+        <!-- PUNTO 6 -->
+        <div class="bg-white rounded-2xl p-6 border border-slate-200/90 shadow-sm hover:shadow-card-hover hover:border-gold-500/50 transition-all duration-300 hover:-translate-y-1 flex flex-col justify-between group">
+          <div>
+            <div class="flex items-center justify-between mb-4">
+              <span class="w-9 h-9 rounded-xl bg-classic-900 text-gold-300 font-serif font-bold text-sm flex items-center justify-center shadow">
+                06
+              </span>
+              <div class="w-10 h-10 rounded-xl bg-gold-50 text-gold-700 flex items-center justify-center group-hover:scale-110 transition-transform">
+                <i data-lucide="sparkles" class="w-5 h-5"></i>
+              </div>
+            </div>
+            <h3 class="font-serif text-lg font-bold text-classic-900 mb-2 group-hover:text-gold-700 transition-colors">
+              Serate e intrattenimento
+            </h3>
+            <p class="text-sm text-slate-600 leading-relaxed font-normal">
+              Eventi sociali e momenti di aggregazione extrascolastica, feste d'istituto, jam session e rassegne musicali studentesche.
+            </p>
+          </div>
+          <div class="mt-4 pt-3 border-t border-slate-100 flex items-center text-xs font-semibold text-slate-400 group-hover:text-gold-600 transition-colors">
+            <span>Vita Studentesca</span>
+            <i data-lucide="arrow-right" class="w-3.5 h-3.5 ml-auto"></i>
+          </div>
+        </div>
+
+        <!-- PUNTO 7 -->
+        <div class="bg-white rounded-2xl p-6 border border-slate-200/90 shadow-sm hover:shadow-card-hover hover:border-gold-500/50 transition-all duration-300 hover:-translate-y-1 flex flex-col justify-between group">
+          <div>
+            <div class="flex items-center justify-between mb-4">
+              <span class="w-9 h-9 rounded-xl bg-classic-900 text-gold-300 font-serif font-bold text-sm flex items-center justify-center shadow">
+                07
+              </span>
+              <div class="w-10 h-10 rounded-xl bg-gold-50 text-gold-700 flex items-center justify-center group-hover:scale-110 transition-transform">
+                <i data-lucide="credit-card" class="w-5 h-5"></i>
+              </div>
+            </div>
+            <h3 class="font-serif text-lg font-bold text-classic-900 mb-2 group-hover:text-gold-700 transition-colors">
+              Carta dello studente e convenzioni
+            </h3>
+            <p class="text-sm text-slate-600 leading-relaxed font-normal">
+              Agevolazioni commerciali e sconti dedicati presso i partner locali (cartolerie, librerie, bar, cinema e negozi di strumenti).
+            </p>
+          </div>
+          <div class="mt-4 pt-3 border-t border-slate-100 flex items-center text-xs font-semibold text-slate-400 group-hover:text-gold-600 transition-colors">
+            <span>Vantaggi Esclusivi</span>
+            <i data-lucide="arrow-right" class="w-3.5 h-3.5 ml-auto"></i>
+          </div>
+        </div>
+
+        <!-- PUNTO 8 -->
+        <div class="bg-white rounded-2xl p-6 border border-slate-200/90 shadow-sm hover:shadow-card-hover hover:border-gold-500/50 transition-all duration-300 hover:-translate-y-1 flex flex-col justify-between group">
+          <div>
+            <div class="flex items-center justify-between mb-4">
+              <span class="w-9 h-9 rounded-xl bg-classic-900 text-gold-300 font-serif font-bold text-sm flex items-center justify-center shadow">
+                08
+              </span>
+              <div class="w-10 h-10 rounded-xl bg-gold-50 text-gold-700 flex items-center justify-center group-hover:scale-110 transition-transform">
+                <i data-lucide="compass" class="w-5 h-5"></i>
+              </div>
+            </div>
+            <h3 class="font-serif text-lg font-bold text-classic-900 mb-2 group-hover:text-gold-700 transition-colors">
+              Orientamento universitario
+            </h3>
+            <p class="text-sm text-slate-600 leading-relaxed font-normal">
+              Giornate dedicate alle scelte post-diploma, simulazioni test d'ingresso e incontri con conservatori ed università d'eccellenza.
+            </p>
+          </div>
+          <div class="mt-4 pt-3 border-t border-slate-100 flex items-center text-xs font-semibold text-slate-400 group-hover:text-gold-600 transition-colors">
+            <span>Futuro & Carriere</span>
+            <i data-lucide="arrow-right" class="w-3.5 h-3.5 ml-auto"></i>
+          </div>
+        </div>
+
+      </div>
+
+    </div>
+  </section>
+
+  <!-- ========================================================= -->
+  <!-- 5. COLLABORAZIONI E PARTNERSHIP UFFICIALI: SCUOLAZOO      -->
+  <!-- ========================================================= -->
+  <section id="scuolazoo" class="py-24 bg-scuolazoo-black text-white relative overflow-hidden border-b border-gold-500/30">
+    
+    <!-- Bagliori decorativi ScuolaZoo (Rosso vivace e Giallo iconico) -->
+    <div class="absolute -top-24 -left-24 w-96 h-96 bg-scuolazoo-red/20 rounded-full blur-3xl pointer-events-none"></div>
+    <div class="absolute -bottom-24 -right-24 w-96 h-96 bg-scuolazoo-yellow/15 rounded-full blur-3xl pointer-events-none"></div>
+
+    <div class="relative max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      
+      <!-- Intestazione Sezione & Badge Certificazione Ufficiale -->
+      <div class="text-center max-w-3xl mx-auto mb-16">
+        
+        <!-- Logo Ufficiale Certificato SZ Rappresentanti d'Istituto posizionato strategicamente -->
+        <div class="inline-flex items-center gap-3 px-4 py-2 rounded-2xl bg-white/10 backdrop-blur-md border border-white/20 shadow-lg mb-6">
+          <div class="px-2.5 py-1 rounded-lg bg-scuolazoo-red font-black text-xs uppercase tracking-tighter text-white">
+            SZ
+          </div>
+          <span class="text-xs sm:text-sm font-bold tracking-wide text-white uppercase">
+            SZ Rappresentanti d'Istituto • Certificato Ufficiale
+          </span>
+          <i data-lucide="badge-check" class="w-5 h-5 text-emerald-400"></i>
+        </div>
+
+        <h2 class="font-serif text-3xl sm:text-4xl lg:text-5xl font-extrabold tracking-tight text-white">
+          Partnership Ufficiale con ScuolaZoo
+        </h2>
+        
+        <div class="w-24 h-1.5 bg-gradient-to-r from-scuolazoo-red to-scuolazoo-yellow mx-auto mt-4 rounded-full"></div>
+
+        <!-- Testo Descrittivo Ufficiale -->
+        <p class="text-base sm:text-lg text-slate-200 mt-6 leading-relaxed font-normal">
+          Siamo orgogliosi di annunciare la nostra collaborazione ufficiale con ScuolaZoo. Grazie a questa sinergia, porteremo ancora più energia, supporto logistico e iniziative concrete all'interno del nostro istituto.
+        </p>
+
+      </div>
+
+      <!-- Layout Integrato: Merchandising & Box Playlist Idee -->
+      <div class="grid grid-cols-1 lg:grid-cols-12 gap-8 items-stretch">
+        
+        <!-- ================= ELEMENTO 1: GALLERIA MERCHANDISING ================= -->
+        <div class="lg:col-span-7 bg-slate-900/90 rounded-3xl p-8 border border-white/10 flex flex-col justify-between backdrop-blur-md">
+          
+          <div>
+            <div class="flex items-center justify-between pb-6 border-b border-slate-800">
+              <div class="flex items-center gap-3">
+                <div class="w-12 h-12 rounded-xl bg-scuolazoo-red flex items-center justify-center font-black text-white text-lg shadow-md">
+                  SZ
+                </div>
+                <div>
+                  <h3 class="font-serif text-xl sm:text-2xl font-bold text-white">
+                    Merch Scuole powered by ScuolaZoo
+                  </h3>
+                  <p class="text-xs text-slate-400">
+                    Linee esclusive per la community dell'Empedocle
+                  </p>
+                </div>
+              </div>
+              <span class="hidden sm:inline-block px-3 py-1 text-xs font-black uppercase rounded-full bg-scuolazoo-yellow text-slate-950">
+                Spedizione Gratuita
+              </span>
+            </div>
+
+            <!-- Vantaggi Merch -->
+            <div class="grid grid-cols-3 gap-3 my-6 text-center">
+              <div class="p-3 bg-slate-800/80 rounded-xl border border-slate-700">
+                <i data-lucide="shirt" class="w-5 h-5 text-scuolazoo-yellow mx-auto mb-1"></i>
+                <div class="text-xs font-bold text-white">Capi Rappresentanti</div>
+                <div class="text-[11px] text-slate-400">Felpe & Polo d'Istituto</div>
+              </div>
+              <div class="p-3 bg-slate-800/80 rounded-xl border border-slate-700">
+                <i data-lucide="palette" class="w-5 h-5 text-scuolazoo-yellow mx-auto mb-1"></i>
+                <div class="text-xs font-bold text-white">Grafiche Custom</div>
+                <div class="text-[11px] text-slate-400">Design 100% Empedocle</div>
+              </div>
+              <div class="p-3 bg-slate-800/80 rounded-xl border border-slate-700">
+                <i data-lucide="truck" class="w-5 h-5 text-scuolazoo-yellow mx-auto mb-1"></i>
+                <div class="text-xs font-bold text-white">Zero Spese Spedizione</div>
+                <div class="text-[11px] text-slate-400">Consegna a Scuola</div>
+              </div>
+            </div>
+
+            <!-- Mockup Visivo Gallery Placeholder Merchandising -->
+            <div class="bg-gradient-to-br from-slate-950 to-slate-900 rounded-2xl p-6 border border-slate-800 relative overflow-hidden">
+              <div class="absolute -right-6 -bottom-6 w-32 h-32 bg-scuolazoo-red/20 rounded-full blur-2xl"></div>
+
+              <div class="flex flex-col sm:flex-row items-center justify-between gap-6">
+                <!-- Preview Capo Rappresentanti -->
+                <div class="flex items-center gap-4">
+                  <div class="w-24 h-24 rounded-2xl bg-slate-800 border border-slate-700 flex flex-col items-center justify-center p-2 text-center shrink-0">
+                    <i data-lucide="sparkle" class="w-8 h-8 text-scuolazoo-yellow mb-1 animate-pulse"></i>
+                    <span class="text-[10px] font-bold text-slate-300 uppercase">Felpa Ufficiale</span>
+                  </div>
+                  <div>
+                    <span class="text-xs font-bold text-scuolazoo-yellow uppercase tracking-wider">Edizione Limitata 2026/27</span>
+                    <h4 class="font-serif text-lg font-bold text-white">Hoodie "Sinfonia Empedocle"</h4>
+                    <p class="text-xs text-slate-400 mt-1 max-w-sm">
+                      Tessuto premium ricamato, logo del Liceo sul petto e certificazione ufficiale ScuolaZoo sulla manica.
+                    </p>
+                  </div>
+                </div>
+
+                <div class="shrink-0 text-center sm:text-right">
+                  <div class="text-xs text-slate-400">Riservato a studenti e classi</div>
+                  <div class="text-sm font-bold text-emerald-400 flex items-center gap-1 justify-center sm:justify-end">
+                    <i data-lucide="check" class="w-4 h-4"></i> Pre-ordini aperti a breve
+                  </div>
+                </div>
+              </div>
+            </div>
+
+          </div>
+
+          <!-- Footer card con logo ufficiale SZ strategico -->
+          <div class="mt-6 pt-4 border-t border-slate-800 flex items-center justify-between text-xs text-slate-400">
+            <span class="flex items-center gap-1.5">
+              <i data-lucide="shield-check" class="w-4 h-4 text-emerald-400"></i>
+              Accordo Quadro Rappresentanti d'Istituto
+            </span>
+            <span class="font-bold text-white uppercase tracking-wider">
+              Powered by ScuolaZoo
+            </span>
+          </div>
+
+        </div>
+
+        <!-- ================= ELEMENTO 2: BANNER PLAYLIST DELLE IDEE ================= -->
+        <div class="lg:col-span-5 bg-gradient-to-b from-slate-900 to-classic-950 rounded-3xl p-8 border border-scuolazoo-yellow/30 flex flex-col justify-between shadow-2xl relative">
+          
+          <div>
+            <!-- Banner Ufficiale Playlist Idee -->
+            <div class="p-4 rounded-2xl bg-scuolazoo-yellow text-classic-950 mb-6 flex items-center gap-3.5 shadow-md">
+              <div class="w-12 h-12 rounded-xl bg-classic-950 text-scuolazoo-yellow flex items-center justify-center shrink-0">
+                <i data-lucide="headphones" class="w-6 h-6"></i>
+              </div>
+              <div>
+                <span class="text-[10px] font-black uppercase tracking-widest text-classic-900 block">
+                  ScuolaZoo Rappresentanti d'Istituto
+                </span>
+                <h3 class="font-serif text-base sm:text-lg font-black leading-tight">
+                  Playlist — Per ascoltare le vostre idee!
+                </h3>
+              </div>
+            </div>
+
+            <p class="text-sm text-slate-300 mb-5 leading-relaxed">
+              La colonna sonora della nostra scuola e la cassetta delle idee in un unico posto. Proponi brani per le ricreazioni musicali o lascia un'idea lampo per i rappresentanti.
+            </p>
+
+            <!-- Box Interattivo per Condivisione Idee -->
+            <form id="ideaForm" onsubmit="handleIdeaSubmit(event)" class="space-y-3">
+              <div>
+                <label class="block text-xs font-semibold uppercase tracking-wider text-slate-300 mb-1">
+                  La tua proposta o brano per la playlist:
+                </label>
+                <div class="relative">
+                  <input type="text" id="ideaInput" required placeholder="Es. Torneo di calcetto, Brano di Chopin/Oasis per ricreazione..." class="w-full bg-slate-950/80 border border-slate-700 rounded-xl px-4 py-3 text-sm text-white placeholder-slate-500 focus:outline-none focus:border-scuolazoo-yellow focus:ring-1 focus:ring-scuolazoo-yellow transition-all">
+                </div>
+              </div>
+
+              <div class="grid grid-cols-2 gap-2">
+                <select id="ideaCategory" class="bg-slate-950/80 border border-slate-700 rounded-xl px-3 py-2 text-xs text-slate-300 focus:outline-none focus:border-scuolazoo-yellow">
+                  <option value="Idea Progetto">💡 Idea Progetto</option>
+                  <option value="Brano Musicale">🎵 Canzone per Playlist</option>
+                  <option value="Evento / Serata">🎉 Evento / Serata</option>
+                </select>
+                <input type="text" id="ideaAuthor" placeholder="Nome o Classe (opzionale)" class="bg-slate-950/80 border border-slate-700 rounded-xl px-3 py-2 text-xs text-white placeholder-slate-500 focus:outline-none focus:border-scuolazoo-yellow">
+              </div>
+
+              <button type="submit" class="w-full py-3 rounded-xl bg-scuolazoo-yellow hover:bg-yellow-400 text-classic-950 font-bold text-xs uppercase tracking-wider flex items-center justify-center gap-2 shadow-md transition-all">
+                <i data-lucide="send" class="w-4 h-4"></i>
+                Invia nella Playlist delle Idee
+              </button>
+            </form>
+
+            <!-- Idee Live Feed Anteprima -->
+            <div class="mt-6 pt-4 border-t border-slate-800">
+              <div class="text-[11px] font-bold uppercase tracking-wider text-slate-400 mb-2 flex items-center justify-between">
+                <span>Ultime idee inviate dagli studenti:</span>
+                <span class="text-emerald-400 flex items-center gap-1"><span class="w-1.5 h-1.5 rounded-full bg-emerald-400 animate-ping"></span> Live</span>
+              </div>
+              <div id="ideasContainer" class="space-y-2 max-h-32 overflow-y-auto pr-1 text-xs">
+                <div class="p-2.5 rounded-lg bg-slate-800/70 border border-slate-700/60 flex items-start justify-between gap-2">
+                  <span class="text-slate-200">«Potenziamento Wi-Fi in Aula Magna e succursale»</span>
+                  <span class="text-[10px] text-scuolazoo-yellow shrink-0">💡 Progetto</span>
+                </div>
+                <div class="p-2.5 rounded-lg bg-slate-800/70 border border-slate-700/60 flex items-start justify-between gap-2">
+                  <span class="text-slate-200">«Ludovico Einaudi - Nuvole Bianche all'intervallo»</span>
+                  <span class="text-[10px] text-scuolazoo-yellow shrink-0">🎵 Brano</span>
+                </div>
+              </div>
+            </div>
+
+          </div>
+
+          <!-- Certificazione Logo SZ a chiusura -->
+          <div class="mt-6 pt-4 border-t border-slate-800 flex items-center justify-center gap-2 text-xs text-slate-400">
+            <span class="w-2 h-2 rounded-full bg-scuolazoo-red"></span>
+            <span>Riconosciuto da <strong>ScuolaZoo Rappresentanti d'Istituto</strong></span>
+          </div>
+
+        </div>
+
+      </div>
+
+    </div>
+  </section>
+
+  <!-- ========================================================= -->
+  <!-- MODALE INTERATTIVO: HUB APPUNTI                            -->
+  <!-- ========================================================= -->
+  <div id="appuntiModal" class="fixed inset-0 z-50 hidden bg-classic-950/80 backdrop-blur-sm flex items-center justify-center p-4">
+    <div class="bg-white rounded-3xl max-w-3xl w-full max-h-[90vh] overflow-hidden shadow-2xl flex flex-col animate-in fade-in zoom-in duration-200">
+      
+      <!-- Header Modale -->
+      <div class="p-6 bg-classic-900 text-white flex items-center justify-between border-b border-gold-500/30">
+        <div class="flex items-center gap-3">
+          <div class="w-10 h-10 rounded-xl bg-gold-500 text-classic-950 flex items-center justify-center font-bold">
+            <i data-lucide="book-marked" class="w-5 h-5"></i>
+          </div>
+          <div>
+            <h3 class="font-serif text-xl font-bold">Hub Appunti — Empedocle</h3>
+            <p class="text-xs text-slate-300">Materiali verificati per Classico e Musicale</p>
+          </div>
+        </div>
+        <button onclick="closeModal('appuntiModal')" class="p-2 rounded-xl text-slate-400 hover:text-white hover:bg-slate-800">
+          <i data-lucide="x" class="w-6 h-6"></i>
+        </button>
+      </div>
+
+      <!-- Ricerca & Filtri -->
+      <div class="p-6 border-b border-slate-100 bg-slate-50 flex flex-col sm:flex-row gap-3">
+        <div class="relative flex-1">
+          <i data-lucide="search" class="w-4 h-4 absolute left-3.5 top-3.5 text-slate-400"></i>
+          <input type="text" id="searchAppunti" onkeyup="filterAppunti()" placeholder="Cerca argomento (es. Platone, Metrica, Chopin, Dante)..." class="w-full pl-10 pr-4 py-2.5 rounded-xl border border-slate-300 text-sm focus:outline-none focus:border-gold-500">
+        </div>
+        <div class="flex gap-2">
+          <button onclick="filterAppuntiByIndirizzo('all')" class="filter-btn px-3 py-2 text-xs font-bold rounded-lg bg-classic-900 text-white">Tutti</button>
+          <button onclick="filterAppuntiByIndirizzo('classico')" class="filter-btn px-3 py-2 text-xs font-bold rounded-lg bg-white border border-slate-300 text-slate-700 hover:bg-slate-100">Classico</button>
+          <button onclick="filterAppuntiByIndirizzo('musicale')" class="filter-btn px-3 py-2 text-xs font-bold rounded-lg bg-white border border-slate-300 text-slate-700 hover:bg-slate-100">Musicale</button>
+        </div>
+      </div>
+
+      <!-- Elenco Appunti Scaricabili -->
+      <div id="appuntiList" class="p-6 overflow-y-auto space-y-3 flex-1 text-slate-700">
+        
+        <div class="appunti-item p-4 rounded-2xl border border-slate-200 hover:border-gold-400 bg-white hover:shadow-md transition-all flex items-center justify-between gap-4" data-indirizzo="classico" data-title="Empedocle e i 4 Elementi Sintesi Filosofica">
+          <div class="flex items-center gap-3.5">
+            <div class="w-10 h-10 rounded-xl bg-amber-50 text-gold-700 flex items-center justify-center font-bold shrink-0">
+              <i data-lucide="file-text" class="w-5 h-5"></i>
+            </div>
+            <div>
+              <span class="text-[10px] font-bold uppercase tracking-wider text-gold-700 bg-gold-50 px-2 py-0.5 rounded">Classico • Filosofia</span>
+              <h4 class="font-serif font-bold text-classic-900 text-base">Empedocle di Agrigento: Le 4 Radici e l'Amore/Odio</h4>
+              <p class="text-xs text-slate-500">Schema concettuale con mappa cronologica per il triennio • PDF (1.2 MB)</p>
+            </div>
+          </div>
+          <button onclick="simulateDownload('Empedocle_Filosofia_Sintesi.pdf')" class="px-3.5 py-2 rounded-lg bg-classic-900 hover:bg-gold-500 hover:text-classic-950 text-white text-xs font-bold inline-flex items-center gap-1.5 transition-colors shrink-0">
+            <i data-lucide="download" class="w-3.5 h-3.5"></i> Scarica
+          </button>
+        </div>
+
+        <div class="appunti-item p-4 rounded-2xl border border-slate-200 hover:border-gold-400 bg-white hover:shadow-md transition-all flex items-center justify-between gap-4" data-indirizzo="classico" data-title="Metrica Greca e Trimandro Giambico">
+          <div class="flex items-center gap-3.5">
+            <div class="w-10 h-10 rounded-xl bg-amber-50 text-gold-700 flex items-center justify-center font-bold shrink-0">
+              <i data-lucide="file-text" class="w-5 h-5"></i>
+            </div>
+            <div>
+              <span class="text-[10px] font-bold uppercase tracking-wider text-gold-700 bg-gold-50 px-2 py-0.5 rounded">Classico • Greco</span>
+              <h4 class="font-serif font-bold text-classic-900 text-base">Guida Rapida alla Scansione Metrica: Esametro e Trimetro</h4>
+              <p class="text-xs text-slate-500">Regole d'accento, sillabe lunghe/brevi e cesure frequenti • PDF (890 KB)</p>
+            </div>
+          </div>
+          <button onclick="simulateDownload('Scansione_Metrica_Greca.pdf')" class="px-3.5 py-2 rounded-lg bg-classic-900 hover:bg-gold-500 hover:text-classic-950 text-white text-xs font-bold inline-flex items-center gap-1.5 transition-colors shrink-0">
+            <i data-lucide="download" class="w-3.5 h-3.5"></i> Scarica
+          </button>
+        </div>
+
+        <div class="appunti-item p-4 rounded-2xl border border-slate-200 hover:border-gold-400 bg-white hover:shadow-md transition-all flex items-center justify-between gap-4" data-indirizzo="musicale" data-title="Teoria e Analisi Armonica Accordi e Cadenze">
+          <div class="flex items-center gap-3.5">
+            <div class="w-10 h-10 rounded-xl bg-blue-50 text-blue-700 flex items-center justify-center font-bold shrink-0">
+              <i data-lucide="music" class="w-5 h-5"></i>
+            </div>
+            <div>
+              <span class="text-[10px] font-bold uppercase tracking-wider text-blue-700 bg-blue-50 px-2 py-0.5 rounded">Musicale • TAC</span>
+              <h4 class="font-serif font-bold text-classic-900 text-base">Compendio di Armonia: Cadenze, Modulazioni e Basso Continuo</h4>
+              <p class="text-xs text-slate-500">Schemi pratici di risoluzione per allievi del Liceo Musicale • PDF (2.4 MB)</p>
+            </div>
+          </div>
+          <button onclick="simulateDownload('Compendio_Armonia_Musicale.pdf')" class="px-3.5 py-2 rounded-lg bg-classic-900 hover:bg-gold-500 hover:text-classic-950 text-white text-xs font-bold inline-flex items-center gap-1.5 transition-colors shrink-0">
+            <i data-lucide="download" class="w-3.5 h-3.5"></i> Scarica
+          </button>
+        </div>
+
+        <div class="appunti-item p-4 rounded-2xl border border-slate-200 hover:border-gold-400 bg-white hover:shadow-md transition-all flex items-center justify-between gap-4" data-indirizzo="musicale" data-title="Storia della Musica Dal Barocco al Romanticismo">
+          <div class="flex items-center gap-3.5">
+            <div class="w-10 h-10 rounded-xl bg-blue-50 text-blue-700 flex items-center justify-center font-bold shrink-0">
+              <i data-lucide="music" class="w-5 h-5"></i>
+            </div>
+            <div>
+              <span class="text-[10px] font-bold uppercase tracking-wider text-blue-700 bg-blue-50 px-2 py-0.5 rounded">Musicale • Storia della Musica</span>
+              <h4 class="font-serif font-bold text-classic-900 text-base">Forma Sonata e Romanticismo Musicale: Da Beethoven a Schumann</h4>
+              <p class="text-xs text-slate-500">Analisi formale e contesto storiografico • PDF (1.7 MB)</p>
+            </div>
+          </div>
+          <button onclick="simulateDownload('Storia_Musica_Romanticismo.pdf')" class="px-3.5 py-2 rounded-lg bg-classic-900 hover:bg-gold-500 hover:text-classic-950 text-white text-xs font-bold inline-flex items-center gap-1.5 transition-colors shrink-0">
+            <i data-lucide="download" class="w-3.5 h-3.5"></i> Scarica
+          </button>
+        </div>
+
+      </div>
+
+      <!-- Footer Modale -->
+      <div class="p-4 bg-slate-100 border-t border-slate-200 flex items-center justify-between">
+        <span class="text-xs text-slate-500">Vuoi contribuire con i tuoi appunti?</span>
+        <button onclick="closeModal('appuntiModal'); openModal('uploadAppuntiModal')" class="px-4 py-2 rounded-xl bg-gold-600 hover:bg-gold-500 text-white text-xs font-bold">
+          Carica i tuoi schemi
+        </button>
+      </div>
+
+    </div>
+  </div>
+
+  <!-- ========================================================= -->
+  <!-- MODALE INTERATTIVO: CARICA APPUNTI                         -->
+  <!-- ========================================================= -->
+  <div id="uploadAppuntiModal" class="fixed inset-0 z-50 hidden bg-classic-950/80 backdrop-blur-sm flex items-center justify-center p-4">
+    <div class="bg-white rounded-3xl max-w-lg w-full overflow-hidden shadow-2xl animate-in fade-in duration-200">
+      <div class="p-6 bg-classic-900 text-white flex items-center justify-between">
+        <div class="flex items-center gap-3">
+          <i data-lucide="upload-cloud" class="w-6 h-6 text-gold-400"></i>
+          <h3 class="font-serif text-lg font-bold">Condividi un Tuo Appunto</h3>
+        </div>
+        <button onclick="closeModal('uploadAppuntiModal')" class="text-slate-400 hover:text-white">
+          <i data-lucide="x" class="w-5 h-5"></i>
+        </button>
+      </div>
+
+      <form onsubmit="handleUploadSubmit(event)" class="p-6 space-y-4">
+        <div>
+          <label class="block text-xs font-bold uppercase text-slate-600 mb-1">Titolo dell'Appunto / Sintesi</label>
+          <input type="text" required placeholder="Es. Mappa concettuale su Tacito..." class="w-full px-3.5 py-2.5 rounded-xl border border-slate-300 text-sm focus:outline-none focus:border-gold-500">
+        </div>
+        <div class="grid grid-cols-2 gap-3">
+          <div>
+            <label class="block text-xs font-bold uppercase text-slate-600 mb-1">Indirizzo</label>
+            <select class="w-full px-3 py-2.5 rounded-xl border border-slate-300 text-sm focus:outline-none focus:border-gold-500">
+              <option>Liceo Classico</option>
+              <option>Liceo Musicale</option>
+              <option>Materia Comune</option>
+            </select>
+          </div>
+          <div>
+            <label class="block text-xs font-bold uppercase text-slate-600 mb-1">Materia</label>
+            <input type="text" required placeholder="Es. Greco, TAC, Storia..." class="w-full px-3.5 py-2.5 rounded-xl border border-slate-300 text-sm focus:outline-none focus:border-gold-500">
+          </div>
+        </div>
+        <div>
+          <label class="block text-xs font-bold uppercase text-slate-600 mb-1">Seleziona File (PDF o Immagini)</label>
+          <div class="border-2 border-dashed border-slate-300 rounded-xl p-4 text-center hover:border-gold-500 cursor-pointer">
+            <i data-lucide="file-up" class="w-6 h-6 text-slate-400 mx-auto mb-1"></i>
+            <span class="text-xs text-slate-500">Trascina qui il file o fai click per selezionarlo</span>
+          </div>
+        </div>
+        <button type="submit" class="w-full py-3 rounded-xl bg-gold-600 hover:bg-gold-500 text-white font-bold text-xs uppercase tracking-wider transition-colors">
+          Invia all'Archivio Scolastico
+        </button>
+      </form>
+    </div>
+  </div>
+
+  <!-- ========================================================= -->
+  <!-- MODALE INTERATTIVO: BACHECA SEGNALAZIONI UFFICIALE       -->
+  <!-- ========================================================= -->
+  <div id="segnalazioniModal" class="fixed inset-0 z-50 hidden bg-classic-950/80 backdrop-blur-sm flex items-center justify-center p-4">
+    <div class="bg-white rounded-3xl max-w-xl w-full overflow-hidden shadow-2xl animate-in fade-in zoom-in duration-200">
+      
+      <!-- Header Modale Segnalazioni -->
+      <div class="p-6 bg-classic-900 text-white flex items-center justify-between border-b border-gold-500/30">
+        <div class="flex items-center gap-3">
+          <div class="w-10 h-10 rounded-xl bg-gradient-to-br from-gold-500 to-gold-600 text-classic-950 flex items-center justify-center font-bold">
+            <i data-lucide="megaphone" class="w-5 h-5"></i>
+          </div>
+          <div>
+            <h3 class="font-serif text-xl font-bold">Modulo Ufficiale Segnalazioni</h3>
+            <p class="text-xs text-slate-300">Liceo Classico e Musicale "Empedocle" - Agrigento</p>
+          </div>
+        </div>
+        <button onclick="closeModal('segnalazioniModal')" class="p-2 rounded-xl text-slate-400 hover:text-white hover:bg-slate-800">
+          <i data-lucide="x" class="w-6 h-6"></i>
+        </button>
+      </div>
+
+      <!-- Form Ufficiale -->
+      <form id="segnalazioneForm" onsubmit="handleSegnalazioneSubmit(event)" class="p-6 space-y-4 text-slate-700">
+        
+        <div class="bg-amber-50 border border-amber-200/80 rounded-xl p-3 text-xs text-amber-900 flex items-start gap-2.5">
+          <i data-lucide="info" class="w-4 h-4 text-amber-700 shrink-0 mt-0.5"></i>
+          <span>Tutte le segnalazioni vengono catalogate e presentate direttamente dai candidati durante i Consigli d'Istituto e le assemblee.</span>
+        </div>
+
+        <div class="grid grid-cols-1 sm:grid-cols-2 gap-4">
+          <div>
+            <label class="block text-xs font-bold uppercase tracking-wider text-slate-600 mb-1">
+              Sede interessata *
+            </label>
+            <select id="sedeSelect" required class="w-full px-3.5 py-2.5 rounded-xl border border-slate-300 text-sm focus:outline-none focus:border-gold-500">
+              <option value="Sede Centrale">Sede Centrale (Via Minerva)</option>
+              <option value="Succursale">Succursale</option>
+              <option value="Tutte le sedi 
+">Tutte le sedi 4
+
+
+ / Generale</option>
+            </select>
+          </div>
+          <div>
+            <label class="block text-xs font-bold uppercase tracking-wider text-slate-600 mb-1">
+              Categoria problema *
+            </label>
+            <select id="categoriaSelect" required class="w-full px-3.5 py-2.5 rounded-xl border border-slate-300 text-sm focus:outline-none focus:border-gold-500">
+              <option value="Strutture e Aule">Aule, Riscaldamento & Bagni</option>
+              <option value="Didattica e Orari">Didattica, Orari & Trasporti</option>
+              <option value="Laboratori e Strumenti">Laboratori & Strumenti Musicali</option>
+              <option value="Proposta per Assemblea">Proposta per Assemblea Studentesca</option>
+              <option value="Altro">Altro disservizio</option>
+            </select>
+          </div>
+        </div>
+
+        <div>
+          <label class="block text-xs font-bold uppercase tracking-wider text-slate-600 mb-1">
+            Oggetto della segnalazione *
+          </label>
+          <input type="text" id="oggettoInput" required placeholder="Es. Malfunzionamento radiatori Ala Ovest..." class="w-full px-3.5 py-2.5 rounded-xl border border-slate-300 text-sm focus:outline-none focus:border-gold-500">
+        </div>
+
+        <div>
+          <label class="block text-xs font-bold uppercase tracking-wider text-slate-600 mb-1">
+            Descrizione dettagliata *
+          </label>
+          <textarea id="descrizioneInput" required rows="3" placeholder="Descrivi il problema, la classe/aula e le eventuali proposte di risoluzione..." class="w-full px-3.5 py-2.5 rounded-xl border border-slate-300 text-sm focus:outline-none focus:border-gold-500"></textarea>
+        </div>
+
+        <div class="flex items-center justify-between pt-2">
+          <label class="flex items-center gap-2 cursor-pointer text-xs font-medium text-slate-600">
+            <input type="checkbox" id="anonimoCheck" class="w-4 h-4 rounded text-gold-600 focus:ring-gold-500">
+            <span>Invia in forma <strong>anonima</strong></span>
+          </label>
+          <span class="text-[11px] text-slate-400">Protezione totale privacy</span>
+        </div>
+
+        <div class="pt-3">
+          <button type="submit" class="w-full py-3.5 rounded-xl bg-gradient-to-r from-gold-500 to-gold-600 text-classic-950 font-bold text-xs uppercase tracking-wider shadow-md hover:from-gold-400 hover:to-gold-500 transition-all flex items-center justify-center gap-2">
+            <i data-lucide="send" class="w-4 h-4"></i>
+            Invia Segnalazione ai Rappresentanti
+          </button>
+        </div>
+
+      </form>
+    </div>
+  </div>
+
+  <!-- TOAST NOTIFICA (Feedback Interattivo) -->
+  <div id="toastNotification" class="fixed bottom-6 right-6 z-50 hidden bg-classic-900 text-white px-5 py-4 rounded-2xl shadow-2xl border border-gold-500/40 flex items-center gap-3 animate-in slide-in-from-bottom duration-300">
+    <div class="w-8 h-8 rounded-full bg-emerald-500/20 text-emerald-400 flex items-center justify-center shrink-0">
+      <i data-lucide="check" class="w-5 h-5"></i>
+    </div>
+    <div>
+      <h5 id="toastTitle" class="text-sm font-bold text-white">Operazione Completata</h5>
+      <p id="toastMessage" class="text-xs text-slate-300">La segnalazione è stata registrata con successo.</p>
+    </div>
+  </div>
+
+  <!-- ========================================================= -->
+  <!-- FOOTER ISTITUZIONALE                                      -->
+  <!-- ========================================================= -->
+  <footer class="bg-classic-950 text-slate-400 border-t border-slate-800 text-sm">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-16">
+      <div class="grid grid-cols-1 md:grid-cols-4 gap-10">
+        
+        <!-- Info Lista -->
+        <div class="md:col-span-2 space-y-4">
+          <div class="flex items-center gap-3">
+            <div class="w-10 h-10 rounded-xl bg-gradient-to-br from-gold-500 to-gold-700 flex items-center justify-center text-classic-950 font-bold">
+              <i data-lucide="landmark" class="w-5 h-5"></i>
+            </div>
+            <div>
+              <span class="font-serif text-xl font-bold text-white">Sinfonia Empedocle</span>
+              <p class="text-xs text-gold-400 font-medium">Lista Elettorale Rappresentanza d'Istituto</p>
+            </div>
+          </div>
+          <p class="text-xs sm:text-sm text-slate-400 max-w-md leading-relaxed">
+            Piattaforma autonoma per gli studenti del Liceo Classico e Musicale "Empedocle" di Agrigento. Promuoviamo la partecipazione attiva, il rispetto dei diritti scolastici e l'arricchimento culturale dell'istituto.
+          </p>
+          <div class="flex items-center gap-3 pt-2">
+            <a href="https://instagram.com/giuseppecristian_puma" target="_blank" rel="noopener noreferrer" class="p-2.5 rounded-xl bg-slate-900 hover:bg-gold-500 hover:text-classic-950 text-slate-300 transition-colors" title="Instagram Giuseppe Cristian Puma">
+              <i data-lucide="instagram" class="w-4 h-4"></i>
+            </a>
+            <a href="https://instagram.com/pietro_figliomeni" target="_blank" rel="noopener noreferrer" class="p-2.5 rounded-xl bg-slate-900 hover:bg-gold-500 hover:text-classic-950 text-slate-300 transition-colors" title="Instagram Pietro Figliomeni">
+              <i data-lucide="instagram" class="w-4 h-4"></i>
+            </a>
+          </div>
+        </div>
+
+        <!-- Link Rapidi -->
+        <div>
+          <h4 class="font-serif text-white font-bold text-base mb-4">Navigazione Rapida</h4>
+          <ul class="space-y-2.5 text-xs">
+            <li><a href="#hero" class="hover:text-gold-300 transition-colors">Benvenuto & Presentazione</a></li>
+            <li><a href="#servizi" class="hover:text-gold-300 transition-colors">Hub Appunti & Bacheca</a></li>
+            <li><a href="#candidati" class="hover:text-gold-300 transition-colors">I Due Candidati</a></li>
+            <li><a href="#programma" class="hover:text-gold-300 transition-colors">I Nostri 8 Punti</a></li>
+            <li><a href="#scuolazoo" class="hover:text-gold-300 transition-colors">Partnership ScuolaZoo</a></li>
+          </ul>
+        </div>
+
+        <!-- Info Sede e Contatti -->
+        <div>
+          <h4 class="font-serif text-white font-bold text-base mb-4">Istituzione Scolastica</h4>
+          <p class="text-xs text-slate-300 leading-relaxed">
+            <strong>Liceo Classico e Musicale "Empedocle"</strong><br>
+            Agrigento (AG) • Sicilia<br>
+            Sede Centrale: Via Minerva<br>
+            Sede Succursale: Agrigento
+          </p>
+          <div class="mt-4 pt-3 border-t border-slate-800 text-[11px] text-slate-500">
+            Iniziativa elettorale studentesca promossa dai candidati rappresentanti.
+          </div>
+        </div>
+
+      </div>
+
+      <!-- Copyright & Disclaimer -->
+      <div class="mt-12 pt-8 border-t border-slate-800/80 flex flex-col sm:flex-row items-center justify-between text-xs text-slate-500 gap-4">
+        <div>
+          &copy; 2026/2027 Lista Elettorale «Sinfonia Empedocle». Tutti i diritti riservati.
+        </div>
+        <div class="flex items-center gap-4">
+          <span class="text-gold-400 font-medium">Liceo Classico e Musicale «Empedocle» di Agrigento</span>
+        </div>
+      </div>
+
+    </div>
+  </footer>
+
+  <!-- ========================================================= -->
+  <!-- JAVASCRIPT PER INTERATTIVITÀ                              -->
+  <!-- ========================================================= -->
+  <script>
+    // Inizializzazione Lucide Icons
+    document.addEventListener("DOMContentLoaded", () => {
+      lucide.createIcons();
+    });
+
+    // Mobile Menu Toggle
+    function toggleMobileMenu() {
+      const menu = document.getElementById("mobileMenu");
+      menu.classList.toggle("hidden");
+    }
+    document.getElementById("mobileMenuBtn").addEventListener("click", toggleMobileMenu);
+
+    // Gestione Modali
+    function openModal(id) {
+      const modal = document.getElementById(id);
+      if (modal) {
+        modal.classList.remove("hidden");
+        document.body.style.overflow = "hidden";
+      }
+    }
+
+    function closeModal(id) {
+      const modal = document.getElementById(id);
+      if (modal) {
+        modal.classList.add("hidden");
+        document.body.style.overflow = "auto";
+      }
+    }
+
+    // Chiusura modali cliccando fuori
+    window.addEventListener("click", (e) => {
+      ['appuntiModal', 'uploadAppuntiModal', 'segnalazioniModal'].forEach(id => {
+        const modal = document.getElementById(id);
+        if (e.target === modal) {
+          closeModal(id);
+        }
+      });
+    });
+
+    // Toast Notification System
+    function showToast(title, message) {
+      const toast = document.getElementById("toastNotification");
+      const titleEl = document.getElementById("toastTitle");
+      const msgEl = document.getElementById("toastMessage");
+      titleEl.innerText = title;
+      msgEl.innerText = message;
+
+      toast.classList.remove("hidden");
+      setTimeout(() => {
+        toast.classList.add("hidden");
+      }, 4500);
+    }
+
+    // Submit Bacheca Segnalazioni
+    function handleSegnalazioneSubmit(e) {
+      e.preventDefault();
+      const sede = document.getElementById("sedeSelect").value;
+      const categoria = document.getElementById("categoriaSelect").value;
+      const oggetto = document.getElementById("oggettoInput").value;
+      const isAnonimo = document.getElementById("anonimoCheck").checked;
+
+      closeModal("segnalazioniModal");
+      document.getElementById("segnalazioneForm").reset();
+
+      showToast(
+        "Segnalazione Registrata!",
+        `Presa in carico per: ${sede} (${categoria}). Verrà discussa nel prossimo Consiglio d'Istituto.`
+      );
+    }
+
+    // Submit Carica Appunti
+    function handleUploadSubmit(e) {
+      e.preventDefault();
+      closeModal("uploadAppuntiModal");
+      showToast(
+        "Materiale Inviato!",
+        "Grazie per aver condiviso i tuoi appunti con gli studenti dell'Empedocle. Il materiale sarà online a breve."
+      );
+    }
+
+    // Submit Playlist / Idee ScuolaZoo
+    function handleIdeaSubmit(e) {
+      e.preventDefault();
+      const input = document.getElementById("ideaInput");
+      const cat = document.getElementById("ideaCategory").value;
+      const author = document.getElementById("ideaAuthor").value || "Studente";
+      const text = input.value.trim();
+
+      if (!text) return;
+
+      const container = document.getElementById("ideasContainer");
+      const newIdea = document.createElement("div");
+      newIdea.className = "p-2.5 rounded-lg bg-slate-800 border border-gold-500/40 flex items-start justify-between gap-2 animate-in fade-in";
+      newIdea.innerHTML = `
+        <span class="text-slate-200">«${text}» <span class="text-slate-400 text-[10px]">(${author})</span></span>
+        <span class="text-[10px] text-scuolazoo-yellow shrink-0">${cat.split(" ")[0]}</span>
+      `;
+      container.insertBefore(newIdea, container.firstChild);
+
+      input.value = "";
+      showToast("Idea Inviata!", "La tua proposta è stata registrata nella Playlist di ScuolaZoo e dei Rappresentanti!");
+    }
+
+    // Simulazione Download Appunti
+    function simulateDownload(filename) {
+      showToast("Download Avviato", `Download del documento: ${filename}`);
+    }
+
+    // Filtro Ricerca Appunti
+    function filterAppunti() {
+      const query = document.getElementById("searchAppunti").value.toLowerCase();
+      const items = document.querySelectorAll(".appunti-item");
+
+      items.forEach(item => {
+        const title = item.getAttribute("data-title").toLowerCase();
+        if (title.includes(query)) {
+          item.style.display = "flex";
+        } else {
+          item.style.display = "none";
+        }
+      });
+    }
+
+    // Filtro per Indirizzo (Classico / Musicale)
+    function filterAppuntiByIndirizzo(indirizzo) {
+      const items = document.querySelectorAll(".appunti-item");
+      const buttons = document.querySelectorAll(".filter-btn");
+
+      buttons.forEach(btn => {
+        btn.classList.remove("bg-classic-900", "text-white");
+        btn.classList.add("bg-white", "text-slate-700");
+      });
+
+      // Highlight active button
+      event.target.classList.add("bg-classic-900", "text-white");
+      event.target.classList.remove("bg-white", "text-slate-700");
+
+      items.forEach(item => {
+        const itemIndirizzo = item.getAttribute("data-indirizzo");
+        if (indirizzo === 'all' || itemIndirizzo === indirizzo) {
+          item.style.display = "flex";
+        } else {
+          item.style.display = "none";
+        }
+      });
+    }
+  </script>
+</body>
+</html>
